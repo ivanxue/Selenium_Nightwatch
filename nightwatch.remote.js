@@ -15,12 +15,14 @@ nightwatch_config = {
       desiredCapabilities: {
         'browserstack.user': 'ivanxue1',
         'browserstack.key': 'YYQosi7Fa5UYvYxy6rCV',
+        'browserstack.debug': true, 
         'os': 'Windows',
         'os_version': '10',
         'browser': 'Firefox',
         'browser_version': '48.0',
         'resolution': '1024x768'
-      }
+      },
+      globals: require('./data/dev.js')
     }
   }
 };

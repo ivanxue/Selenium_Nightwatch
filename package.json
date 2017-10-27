@@ -4,21 +4,20 @@
   "readme": "Nightwatch Integration with [BrowserStack](https://www.browserstack.com)",
   "description": "Selenium examples for Nightwatch and BrowserStack Automate",
   "license": "MIT",
-
   "repository": {
     "type": "git",
     "url": "git@github.com:nightwatchjs/nightwatch.git"
   },
   "dependencies": {
-    "nightwatch": "^0.9.16",
     "chai-nightwatch": "~0.1.x",
     "ejs": "0.8.3",
     "mocha-nightwatch": "3.2.2",
+    "nightwatch": "^0.9.16",
+    "nightwatch-html-reporter": "^2.0.4"
   },
-
   "man": "",
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch -c nightwatch.conf.js",
-    "start": "./node_modules/.bin/nightwatch -c nightwatch.json"
-  },
+    "test": "./node_modules/.bin/nightwatch -c nightwatch.remote.js -r html-reporter.js",
+    "start": "./node_modules/.bin/nightwatch -c nightwatch.local.js -r html-reporter.js"
+  }
 }

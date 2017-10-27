@@ -1,4 +1,4 @@
-{
+module.exports = {
   "src_folders":["tests"],
   "output_folder" : "reports",
   "custom_commands_path" : "",
@@ -35,20 +35,22 @@
         "marionette": true,
         "javascriptEnabled": true,
         "acceptSslCerts": true
+      },
+
+      globals: require('./data/staging.js')
+
+    },
+
+    "chrome" : {
+      "desiredCapabilities": {
+        "browserName": "chrome"
       }
+    },
 
-  },
-
-  "chrome" : {
-    "desiredCapabilities": {
-      "browserName": "chrome"
-    }
-  },
-
-  "edge" : {
-    "desiredCapabilities": {
-      "browserName": "MicrosoftEdge"
+    "edge" : {
+      "desiredCapabilities": {
+        "browserName": "MicrosoftEdge"
+      }
     }
   }
-}
-}
+};
