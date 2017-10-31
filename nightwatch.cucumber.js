@@ -1,9 +1,13 @@
 require('nightwatch-cucumber')({
-  cucumberArgs: ['--require', 'step_definitions', '--format', 'json:reports/cucumber.json', 'features']
+  cucumberArgs: [
+  '--require', 'step_definitions', 
+  '--format', 'json:reports/cucumber_report.json', 
+  'features'
+  ]
 });
 
 module.exports = {
-  "src_folders":["tests"],
+  // "src_folders":["tests"],
   "output_folder" : "reports",
   "custom_commands_path" : "",
   "custom_assertions_path" : "",

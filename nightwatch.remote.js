@@ -1,4 +1,4 @@
-nightwatch_config = {
+module.exports = {
   "src_folders":["tests"],
   "output_folder" : "reports",
   "page_objects_path": "pageObjects/",
@@ -12,9 +12,12 @@ nightwatch_config = {
 
   test_settings: {
     default: {
+      "selenium_port"  : 80,
+      "selenium_host"  : "hub-cloud.browserstack.com",
+
       desiredCapabilities: {
         'browserstack.user': 'feng20',
-        'browserstack.key': 'YYQosi7Fa5UYvYxy6rCV',
+        'browserstack.key': 'bxxkpf34hS1BKKyciXr2',
         'browserstack.debug': true, 
         'os': 'Windows',
         'os_version': '10',
@@ -22,16 +25,24 @@ nightwatch_config = {
         'browser_version': '48.0',
         'resolution': '1024x768'
       },
-      globals: require('./data/dev.js')
-    }
+      globals: require('./data/firefox.js')
+    },
+
+    "chrome" : {
+      "selenium_port"  : 80,
+      "selenium_host"  : "hub-cloud.browserstack.com",
+
+      desiredCapabilities: {
+        'browserstack.user': 'feng20',
+        'browserstack.key': 'bxxkpf34hS1BKKyciXr2',
+        'browserstack.debug': true, 
+        'os': 'Windows',
+        'os_version': '10',
+        'browser': 'Chrome',
+        'browser_version': '62.0',
+        'resolution': '1024x768'
+      },
+      globals: require('./data/chrome.js')
+    },
   }
 };
-
-// Code to copy seleniumhost/port into test settings
-for(var i in nightwatch_config.test_settings){
-  var config = nightwatch_config.test_settings[i];
-  config['selenium_host'] = nightwatch_config.selenium.host;
-  config['selenium_port'] = nightwatch_config.selenium.port;
-}
-
-module.exports = nightwatch_config;

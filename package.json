@@ -10,14 +10,18 @@
   },
   "dependencies": {
     "chai-nightwatch": "~0.1.x",
+    "cucumber": "^3.1.0",
+    "cucumber-html-reporter": "^3.0.4",
     "ejs": "0.8.3",
     "mocha-nightwatch": "3.2.2",
     "nightwatch": "^0.9.16",
+    "nightwatch-cucumber": "^8.2.8",
     "nightwatch-html-reporter": "^2.0.4"
   },
-  "man": "",
+  "man": "nightwatch.local.js",
   "scripts": {
-    "test": "./node_modules/.bin/nightwatch -c nightwatch.remote.js -r html-reporter.js",
-    "start": "./node_modules/.bin/nightwatch -c nightwatch.local.js -r html-reporter.js"
+    "remote-test": "./node_modules/.bin/nightwatch -c nightwatch.remote.js -e default,chrome -r nightwatch-html-reporter.js",
+    "local-test": "./node_modules/.bin/nightwatch -c nightwatch.local.js -e default,chrome -r nightwatch-html-reporter.js",
+    "cucumber-test": "./node_modules/.bin/nightwatch -c nightwatch.cucumber.js -e default; node cucumber-html-reporter.js"
   }
 }
