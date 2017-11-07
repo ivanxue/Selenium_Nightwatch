@@ -1,7 +1,8 @@
 {
   "name": "nightwatch-browserstack",
   "version": "0.1.0",
-  "readme": "Nightwatch Integration with [BrowserStack](https://www.browserstack.com)",
+  "readme":
+    "Nightwatch Integration with [BrowserStack](https://www.browserstack.com)",
   "description": "Selenium examples for Nightwatch and BrowserStack Automate",
   "license": "MIT",
   "repository": {
@@ -20,8 +21,11 @@
   },
   "man": "nightwatch.local.js",
   "scripts": {
-    "remote-test": "./node_modules/.bin/nightwatch -c nightwatch.remote.js -e default,chrome -r nightwatch-html-reporter.js",
-    "local-test": "./node_modules/.bin/nightwatch -c nightwatch.local.js -e default,chrome -r nightwatch-html-reporter.js",
-    "cucumber-test": "./node_modules/.bin/nightwatch -c nightwatch.cucumber.js -e default; node cucumber-html-reporter.js"
+    "remote-test":
+      "./node_modules/.bin/nightwatch -c nightwatch.remote.js -e default,chrome -r nightwatch-html-reporter.js",
+    "local-test":
+      "./node_modules/.bin/nightwatch -c nightwatch.local.js -e default,chrome -r nightwatch-html-reporter.js",
+    "cucumber-test":
+      "./node_modules/.bin/nightwatch -c nightwatch.cucumber.js -e default; node cucumber-html-reporter.js"
   }
 }
