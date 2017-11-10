@@ -1,5 +1,5 @@
 var confirmFlightsCommands = {
-    confirmFlights: function() {
+    confirmFlight: function() {
         return this
         .waitForElementVisible('@logoutBtn', 3000)
         .verify.containsText('@successfulMsg', 'booked')

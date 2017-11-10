@@ -4,7 +4,7 @@ var homeCommands = {
         .waitForElementVisible('@userName', 3000)
         .setValue('@userName', userName)
         .setValue('@password', password)
-        .click('@loginBtn');
+        .click('@loginBtn')
     }
 };
 

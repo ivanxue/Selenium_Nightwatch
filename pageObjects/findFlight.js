@@ -1,7 +1,6 @@
 var findFlightsCommands = {
     findFlights: function(fromPort, toPort) {
         return this
-        .waitForElementVisible('@type', 3000)
         .click('@type')
         .setValue('@fromPort',fromPort)
         .setValue('@toPort', toPort)

@@ -25,6 +25,7 @@ var baseSetting = {
       },
 
       globals: require("./data/data.js"),
+      persist_globals: true,
       
       desiredCapabilities: {
         browserName: "firefox",
@@ -37,9 +38,6 @@ var baseSetting = {
       desiredCapabilities: {
         browserName: "chrome"
       },
-
-      globals: require("./data/data.js"),
-      
     },
 
     firefox: {

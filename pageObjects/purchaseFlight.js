@@ -1,7 +1,6 @@
 var purchaseFlightsCommands = {
-    purchaseFlights: function(firstName, lastName, creditNumber) {
+    purchaseFlight: function(firstName, lastName, creditNumber) {
         return this
-        .waitForElementVisible('@firstName', 3000)
         .setValue('@firstName', firstName)
         .setValue('@lastName', lastName)
         .setValue('@creditCard', creditNumber)

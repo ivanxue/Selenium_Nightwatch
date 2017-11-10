@@ -1,5 +1,5 @@
 module.exports = {
-  'Test 1' : function (browser) {
+  'Test 1': function (browser) {
     var home = browser.page.home();
     var findFlight = browser.page.findFlight();
     var reserveFlight = browser.page.reserveFlight();
@@ -8,14 +8,18 @@ module.exports = {
 
     var data = browser.globals;
 
-    home.navigate();
+    for (var i = 0; i < Object.keys(data).length - 1; i++) {
+      var parameters = data[i];
 
-    home.login(data.userName, data.password);
-    findFlight.findFlights(data.fromPort, data.toPort);
-    reserveFlight.reserveFlights();
-    purchaseFlight.purchaseFlights(data.firstName, data.lastName, data.creditNumber);
-    confirmFlight.confirmFlights();
+      home.navigate();
+
+      home.login(parameters.userName, parameters.password);
+      findFlight.findFlights(parameters.fromPort, parameters.toPort);
+      reserveFlight.reserveFlights();
+      purchaseFlight.purchaseFlight(parameters.firstName, parameters.lastName, data.creditNumber);
+      confirmFlight.confirmFlight();
+    }
 
     browser.end();
-  } 
+  }
 };
