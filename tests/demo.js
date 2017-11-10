@@ -1,16 +1,21 @@
 module.exports = {
-  'Demo test Google' : function (browser) {
-    var google = browser.page.google();
+  'Test 1' : function (browser) {
+    var home = browser.page.home();
+    var findFlight = browser.page.findFlight();
+    var reserveFlight = browser.page.reserveFlight();
+    var purchaseFlight = browser.page.purchaseFlight();
+    var confirmFlight = browser.page.confirmFlight();
+
     var data = browser.globals;
 
-    google.navigate()
-    .assert.title('Google')
-    .assert.visible('@searchBar')
-    .setValue('@searchBar', [data.keyword, browser.Keys.ENTER]);
+    home.navigate();
 
-    browser.pause(5000)
-    .assert.containsText('#main', data.keyword);
+    home.login(data.userName, data.password);
+    findFlight.findFlights(data.fromPort, data.toPort);
+    reserveFlight.reserveFlights();
+    purchaseFlight.purchaseFlights(data.firstName, data.lastName, data.creditNumber);
+    confirmFlight.confirmFlights();
 
     browser.end();
-  }
+  } 
 };
