@@ -1,13 +1,13 @@
 {
-  "name": "nightwatch-browserstack",
+  "name": "nightwatch-cucumber-pom",
   "version": "0.1.0",
   "readme":
-    "Nightwatch Integration with [BrowserStack](https://www.browserstack.com)",
-  "description": "Selenium examples for Nightwatch and BrowserStack Automate",
+    "README.md",
+  "description": "Selenium with Nightwatch framework and Cucumber",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:nightwatchjs/nightwatch.git"
+    "url": "https://github.com/ivanxue/Selenium_Nightwatch.git"
   },
   "dependencies": {
     "chai-nightwatch": "~0.1.x",
