@@ -18,7 +18,7 @@
     "nightwatch-cucumber": "^8.2.8",
     "nightwatch-html-reporter": "^2.0.4"
   },
-  "man": "nightwatch.local.js",
+  "man": "README.md",
   "scripts": {
     "clean": "rm -rf ./reports/*.*",
     "remote-test": "./node_modules/.bin/nightwatch -c nightwatch.remote.js -e default -r nightwatch-html-reporter.js",
