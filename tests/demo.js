@@ -16,7 +16,7 @@ module.exports = {
       home.login(parameters.userName, parameters.password);
       findFlight.findFlights(parameters.fromPort, parameters.toPort);
       reserveFlight.reserveFlights();
-      purchaseFlight.purchaseFlight(parameters.firstName, parameters.lastName, data.creditNumber);
+      purchaseFlight.purchaseFlight(parameters.firstName, parameters.lastName, parameters.creditNumber);
       confirmFlight.confirmFlight();
     }
 

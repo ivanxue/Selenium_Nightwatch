@@ -1,6 +1,7 @@
 var findFlightsCommands = {
     findFlights: function(fromPort, toPort) {
         return this
+        .waitForElementVisible('@type', 10000)
         .click('@type')
         .setValue('@fromPort',fromPort)
         .setValue('@toPort', toPort)
@@ -12,8 +13,8 @@ module.exports = {
     commands: [findFlightsCommands],
     elements: {
         type: {
-            selector: 'input[type="radio"][value="roundtrip"]',
-            locateStrategy: 'css'
+            selector: '//input[@name="tripType"][@value="roundtrip"]',
+            locateStrategy: 'xpath'
         },
         fromPort: {
             selector: '//select[@name="fromPort"]',

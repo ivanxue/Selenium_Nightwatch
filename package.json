@@ -1,8 +1,7 @@
 {
   "name": "nightwatch-cucumber-pom",
   "version": "0.1.0",
-  "readme":
-    "README.md",
+  "readme": "README.md",
   "description": "Selenium with Nightwatch framework and Cucumber",
   "license": "MIT",
   "repository": {
@@ -22,11 +21,8 @@
   "man": "nightwatch.local.js",
   "scripts": {
     "clean": "rm -rf ./reports/*.*",
-    "remote-test":
-      "./node_modules/.bin/nightwatch -c nightwatch.remote.js -e default -r nightwatch-html-reporter.js",
-    "local-test":
-      "./node_modules/.bin/nightwatch -c nightwatch.local.js -e default -r nightwatch-html-reporter.js",
-    "cucumber-test":
-      "./node_modules/.bin/nightwatch -c nightwatch.cucumber.js -e default; node cucumber-html-reporter.js"
+    "remote-test": "./node_modules/.bin/nightwatch -c nightwatch.remote.js -e default -r nightwatch-html-reporter.js",
+    "local-test": "./node_modules/.bin/nightwatch -c nightwatch.local.js -e default -r nightwatch-html-reporter.js",
+    "cucumber-test": "./node_modules/.bin/nightwatch -c nightwatch.cucumber.js -e default; node cucumber-html-reporter.js"
   }
 }
