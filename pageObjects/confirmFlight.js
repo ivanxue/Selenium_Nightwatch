@@ -1,7 +1,7 @@
 var confirmFlightsCommands = {
     confirmFlight: function() {
         return this
-        .waitForElementVisible('@logoutBtn', 3000, 'Logout button %s is displayed in %s millionseconds')
+        .waitForElementVisible('@logoutBtn', 'Logout button %s is displayed in %s millionseconds')
         .verify.containsText('@successfulMsg', 'booked')
         .click('@logoutBtn');
     }
