@@ -1,7 +1,8 @@
 module.exports = {
   "src_folders":["tests"],
   "output_folder" : "reports",
-  "page_objects_path": "pageObjects/",
+  "page_objects_path": "./pageObjects/",
+  "globals_path": "./globals.js",
   "output_folder" : "reports",
   
   selenium : {

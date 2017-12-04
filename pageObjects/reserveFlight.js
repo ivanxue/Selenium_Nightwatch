@@ -1,7 +1,7 @@
 var reserveFlightsCommands = {
     reserveFlights: function() {
         return this
-        .waitForElementVisible('@continueBtn', 3000)
+        .waitForElementVisible('@continueBtn')
         .click('@continueBtn');
     }
 };

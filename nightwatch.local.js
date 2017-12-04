@@ -3,7 +3,7 @@ var baseSetting = {
   output_folder: "./reports",
   custom_commands_path: "",
   custom_assertions_path: "",
-  globals_path: "",
+  globals_path: "./globals.js",
   page_objects_path: "./pageObjects",
 
   selenium: {
@@ -25,19 +25,20 @@ var baseSetting = {
       },
 
       globals: require("./data/data.js"),
+
       persist_globals: true,
-      
+
       desiredCapabilities: {
         browserName: "firefox",
         javascriptEnabled: true,
         acceptSslCerts: true
-      },
+      }
     },
 
     chrome: {
       desiredCapabilities: {
         browserName: "chrome"
-      },
+      }
     },
 
     firefox: {

@@ -11,7 +11,7 @@ var baseSetting = {
   output_folder: "./reports",
   custom_commands_path: "",
   custom_assertions_path: "",
-  globals_path: "",
+  globals_path: "./globals.js",
   page_objects_path: "./pageObjects",
 
   selenium: {
@@ -31,14 +31,12 @@ var baseSetting = {
         enabled: false,
         path: ""
       },
-
+      
       desiredCapabilities: {
         browserName: "chrome",
         javascriptEnabled: true,
         acceptSslCerts: true
       },
-
-      globals: require('./data/data.js')
     },
 
     chrome: {

@@ -1,7 +1,7 @@
 var homeCommands = {
     login: function(userName, password) {
         return this
-        .waitForElementVisible('@userName', 3000)
+        .waitForElementVisible('@userName')
         .setValue('@userName', userName)
         .setValue('@password', password)
         .click('@loginBtn')
