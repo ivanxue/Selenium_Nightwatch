@@ -1,13 +1,6 @@
 module.exports = {
-  before: function(browser) {
-    browser.maximizeWindow();
-  },
 
-  after: function(browser) {
-    browser.end();
-  },
-
-  "Test 1": function(browser) {
+  "Demo Test": function(browser) {
     var home = browser.page.home();
     var findFlight = browser.page.findFlight();
     var reserveFlight = browser.page.reserveFlight();
