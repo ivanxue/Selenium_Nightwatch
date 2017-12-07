@@ -16,7 +16,7 @@ module.exports = {
 
     var data = browser.globals;
 
-    for (var i = 0; i < Object.keys(data).length - 1; i++) {
+    for (var i = 0; i < Object.keys(data).length - 5; i++) {
       var parameters = data[i];
 
       home.navigate();

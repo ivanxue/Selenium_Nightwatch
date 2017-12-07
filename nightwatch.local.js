@@ -29,7 +29,7 @@ var baseSetting = {
       persist_globals: true,
 
       desiredCapabilities: {
-        browserName: "firefox",
+        browserName: "chrome",
         javascriptEnabled: true,
         acceptSslCerts: true
       }
