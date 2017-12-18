@@ -26,7 +26,6 @@ module.exports = {
         'browser_version': '48.0',
         'resolution': '1024x768'
       },
-      globals: require('./data/firefox.js')
     },
 
     "chrome" : {
@@ -43,7 +42,6 @@ module.exports = {
         'browser_version': '62.0',
         'resolution': '1024x768'
       },
-      globals: require('./data/chrome.js')
     },
   }
 };

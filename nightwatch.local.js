@@ -24,8 +24,6 @@ var baseSetting = {
         path: ""
       },
 
-      globals: require("./data/data.js"),
-
       persist_globals: true,
 
       desiredCapabilities: {

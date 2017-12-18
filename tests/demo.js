@@ -7,9 +7,9 @@ module.exports = {
     var purchaseFlight = browser.page.purchaseFlight();
     var confirmFlight = browser.page.confirmFlight();
 
-    var data = browser.globals;
+    var data = browser.globals.data;
 
-    for (var i = 0; i < Object.keys(data).length - 5; i++) {
+    for (var i = 0; i < data.length; i++) {
       var parameters = data[i];
 
       home.navigate();
