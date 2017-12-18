@@ -1,8 +1,12 @@
-require('nightwatch-cucumber')({
+require("nightwatch-cucumber")({
   cucumberArgs: [
-  '--require', 'step_definitions', 
-  '--format', 'json:reports/cucumber_report.json', 
-  'features'
+    "--require",
+    "hooks.js",
+    "--require",
+    "features/step_definitions",
+    "--format",
+    "json:reports/cucumber_report.json",
+    "features"
   ]
 });
 
@@ -11,7 +15,7 @@ var baseSetting = {
   output_folder: "./reports",
   custom_commands_path: "",
   custom_assertions_path: "",
-  globals_path: "./globals.js",
+  globals_path: "",
   page_objects_path: "./pageObjects",
 
   selenium: {
@@ -31,12 +35,12 @@ var baseSetting = {
         enabled: false,
         path: ""
       },
-      
+
       desiredCapabilities: {
         browserName: "chrome",
         javascriptEnabled: true,
         acceptSslCerts: true
-      },
+      }
     },
 
     chrome: {
