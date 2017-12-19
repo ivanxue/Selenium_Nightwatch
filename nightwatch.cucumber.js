@@ -5,6 +5,8 @@ require("nightwatch-cucumber")({
     "--require",
     "features/step_definitions",
     "--format",
+    "node_modules/cucumber-pretty",
+    "--format",
     "json:reports/cucumber_report.json",
     "features"
   ]

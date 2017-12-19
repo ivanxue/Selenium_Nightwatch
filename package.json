@@ -15,6 +15,7 @@
     "mocha-nightwatch": "3.2.2",
     "nightwatch": "^0.9.16",
     "nightwatch-cucumber": "^8.2.8",
+    "cucumber-pretty": "0.0.5",
     "nightwatch-html-reporter": "^2.0.4"
   },
   "man": "README.md",
