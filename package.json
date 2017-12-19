@@ -12,7 +12,6 @@
     "chai-nightwatch": "~0.1.x",
     "cucumber": "^3.1.0",
     "cucumber-html-reporter": "^3.0.4",
-    "ejs": "0.8.3",
     "mocha-nightwatch": "3.2.2",
     "nightwatch": "^0.9.16",
     "nightwatch-cucumber": "^8.2.8",
