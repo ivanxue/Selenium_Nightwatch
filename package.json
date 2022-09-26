@@ -13,7 +13,7 @@
     "cucumber": "^3.1.0",
     "cucumber-html-reporter": "^3.0.4",
     "mocha-nightwatch": "3.2.2",
-    "nightwatch": "^0.9.16",
+    "nightwatch": "^2.3.9",
     "nightwatch-cucumber": "^8.2.8",
     "cucumber-pretty": "0.0.5",
     "nightwatch-html-reporter": "^2.0.4"
